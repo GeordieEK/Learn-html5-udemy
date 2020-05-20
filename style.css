@@ -1,0 +1,227 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(100, 50, 31);
+}
+
+#italic {
+    color: purple
+}
+
+nav {
+    background: aqua;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: teal;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.container {
+    border: 5px solid blue;
+    margin: 50px 5px 25px 0px;
+    padding: 30px;
+}
+
+.box {
+    display: inline-block;
+    background: blue;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+@keyframes fadeME {
+    0%{ opacity: 1;
+    }
+    100% {opacity:0;}
+}
+
+#box1 {
+    animation-name: fadeME;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(purple,yellow,green);
+}
+
+@keyframes get-bigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: get-bigger 5s 6 linear;
+    border-radius: 50%;
+    background: teal
+}
+
+@keyframes change-color {
+    0% {background-color: grey;}
+    25% {background-color: purple;}
+    50% {background-color: yellow;}
+    75% {background-color: orange;}
+    100% {background-color:lemonchiffon;}
+}
+
+#box4 {
+    animation: change-color 7s 4 forwards;
+}
+
+@keyframes move-box {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box5 {
+    position: relative;
+    animation: move-box 6s 4;
+    background: peru 
+}
+
+#box6 {
+    top: 15px;
+    left: 20;
+    position: relative;
+}
+
+html {
+    background-image: linear-gradient(to right, teal, aqua, lightblue)
+}
+
+.circle-img {
+    border-radius: 30%;
+    
+}
+
+img {
+    box-shadow: 5px 5px 3px grey;
+}
+
+.flex {
+    margin: 10px;
+    border: 10px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+{
+    margin: 40px;
+  }
+  
+  .wrapper {
+          display: grid;
+         grid-gap: 10px;
+          grid-template-columns: repeat(5, [col] 20% ) ;
+          grid-template-rows: repeat(3, [row] auto  );
+          background-color: #fff;
+          color: #fff;
+      }
+  
+      .Box {
+          background-color: #fff;
+          color: #fff;
+          border-radius: 5px;
+          padding: 20px;
+          font-size: 150%;
+          z-index:10;
+  
+      }
+  
+      .a {
+          grid-column: col / span  2;
+          grid-row: row ;
+          display: flex;
+          justify-content: center;
+      }
+      .b {
+          grid-column: col 4 / span  2 ;
+          grid-row: row ;
+          display: flex;
+          justify-content: center;
+      }
+      .c {
+          grid-column: col / span 5 ;
+          grid-row: row 2 ;
+          display: flex;
+          justify-content: center;
+      }
+      .d {
+          grid-column: col 1 / span  3 ;
+          grid-row: row 3 ;
+          display: flex;
+          justify-content: center;
+      }
+  
+      .e {
+          grid-column: col 3 / span  3;
+          grid-row: row 3;
+          display: flex;
+          justify-content: center;
+      }
+  
+      .f {
+          grid-column: col 2 / span 3;
+          grid-row: row 2  ;
+          display: flex;
+          justify-content: center;
+          background-color #fff;
+          z-index: 20;
+      }
